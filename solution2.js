@@ -4,18 +4,16 @@
 // For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points,
 //  the function should print: “License suspended”.
 
-const speedLimit=70;
+const speedLimit=70
 function speedRules(speedLimit,input){
     if(input<=speedLimit){
-        return "Ok";
+        return "Ok"
     }
-    const demPoints=((input-speedLimit)/5)
-    if(demPoints>12){
-        return "Licence suspended";
-    }else{
-        return demPoints("Points:"+ demPoints);
+    const demeritPoints=((input-speedLimit)/5)
+    if(demeritPoints>12){
+        return "Licence suspended"}
+    else{
+        return "Demerit Points:"+ [demeritPoints];
     }
-       
-
-    }
+}console.log(speedRules(70,200))
 
