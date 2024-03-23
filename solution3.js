@@ -30,4 +30,4 @@ function calcNetSalary(basicSalary, benefits) {
         netSalary: netSalary
     };
 }
-calcNetSalary() // enter basic salary and benefits as an argument
+console.log(calcNetSalary(10000,500)) // enter basic salary and benefits as an argument
